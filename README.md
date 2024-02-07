@@ -4,11 +4,11 @@
 
 ### Animaion Lighting
 
-![alt text](<Bildschirmfoto vom 2024-02-07 10-15-55.png>)
+![Lighting Text](<README-Images/Bildschirmfoto vom 2024-02-07 10-15-55.png>)
 
 ### Transform rotateY
 
-![alt text](<Bildschirmfoto vom 2024-02-07 10-24-14.png>)
+![Card rotate](<README-Images/Bildschirmfoto vom 2024-02-07 10-24-14.png>)
 
 ## HTML
 
