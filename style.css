@@ -113,7 +113,7 @@ main{
 }
 
 .myCard {
-    margin: 100px auto;
+    margin: 65px auto;
     background-color: transparent;
     width: 350px;
     height: 450px;
@@ -180,7 +180,7 @@ main{
     position: absolute;
     z-index: -1;
     border-radius: 1em;
-    filter: blur(20px);
+    filter: blur(10px);
     animation: animate 5s linear infinite;
   }
   
@@ -227,6 +227,52 @@ a:hover {
 .skill {
     margin: 180px auto;
 }
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: rgb(155, 155, 155);
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs .radio input {
+    display: none;
+  }
+  
+  .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs .radio input:checked + .name {
+    background-color: rgb(201, 201, 201);
+    font-weight: 600;
+  }
+  
+  input:checked ~ .html,
+  input:checked ~ .css,
+  input:checked ~ .java {
+      display: block;
+      
+  }
 .fa-html5 {
     color: rgb(255, 68, 0);
     filter:drop-shadow(0 0 5px rgb(71, 71, 71));
@@ -240,12 +286,15 @@ a:hover {
     filter: drop-shadow(0 0 5px rgb(71, 71, 71));
 }
 .html, .css, .java {
+    display: none;
     margin-top: 10px;
     margin-bottom: 20px;
     width: 100%;
     height: 15px;
-    border: 1px solid;
     border-radius: 10px;
+    animation-name: fadeInDown;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
 }
 .html {
     background: linear-gradient(to right, rgb(255, 68, 0)80%,rgb(253, 253, 253)85%);
@@ -256,6 +305,16 @@ a:hover {
 .java {
     background: linear-gradient(to right, rgb(255, 238, 0)10%,rgb(253, 253, 253)15%);
 }
+@keyframes fadeInDown {
+    0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+    }
+    100% {
+    opacity: 1;
+    transform: none;
+    }
+    } 
 footer{
     width: 100%;
     height: 18%;
