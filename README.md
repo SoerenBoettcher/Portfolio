@@ -24,7 +24,9 @@
 
  - 3 section, h2, h3, p, div box, ul, image und link
 
-![main](<README-Images/Bildschirmfoto vom 2024-02-07 11-16-29.png>)
+![main-1](<README-Images/Bildschirmfoto vom 2024-02-07 15-50-04.png>)
+
+![main-2](<README-Images/Bildschirmfoto vom 2024-02-07 15-52-14.png>)
 
  ### Footer
 
