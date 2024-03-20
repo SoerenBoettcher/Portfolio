@@ -308,8 +308,8 @@ input:checked ~ .java {
 .java {
   background: linear-gradient(
     to right,
-    rgb(255, 238, 0) 10%,
-    rgb(253, 253, 253) 15%
+    rgb(255, 238, 0) 40%,
+    rgb(253, 253, 253) 45%
   );
 }
 @keyframes fadeInDown {
